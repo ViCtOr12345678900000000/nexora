@@ -18,19 +18,19 @@ export default function Sidebar({ isOpen, setIsOpen }) {
 
       <aside className={`
         fixed lg:sticky top-0 left-0 z-40 h-screen
-        bg-[#252547] border-r border-white/5 flex flex-col shrink-0
+        bg-blue-400/40 border-r border-white/5 flex flex-col shrink-0
         transition-all duration-300 ease-in-out
         ${isOpen? 'w- translate-x-0' : 'w- -translate-x-full lg:w-0 lg:overflow-hidden lg:border-0'}
       `}>
         {/* THIS IS THE FIX - scrollable middle */}
         <div className="flex-1 overflow-y-auto overflow-x-hidden min-w- [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:bg-white/10 hover:[&::-webkit-scrollbar-thumb]:bg-white/20">
           {/* Logo */}
-          <div className="p-5 flex items-center justify-between sticky top-0 bg-[#252547] z-10">
+          <div className="p-5 flex items-center justify-between sticky top-0 bg-blue-400  z-10">
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 grid place-items-center text-black font-bold">⬢</div>
               <div>
                 <p className="font-bold leading-none text-">Nexora</p>
-                <p className="text- text-white/40 mt-0.5">SaaS Platform</p>
+                <p className="text- text-emerald-200/40 mt-0.5">SaaS Platform</p>
               </div>
             </div>
             <button onClick={() => setIsOpen(false)} className="lg:hidden w-7 h-7 rounded-full bg-white/5 grid place-items-center">✕</button>
@@ -52,7 +52,7 @@ export default function Sidebar({ isOpen, setIsOpen }) {
                           ? 'bg-[#1e2d2d] text-white border-l-2 border-teal-400'
                             : 'text-white/60 hover:text-white hover:bg-white/5 border-l-2 border-transparent'}`}
                       >
-                        <span className="opacity-70">▭</span> {name}
+                        <span className="opacity-70">⟢</span> {name}
                       </button>
                     )
                   })}

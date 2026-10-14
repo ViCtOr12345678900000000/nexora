@@ -3,16 +3,16 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, CartesianGri
 const growthData = [
   { name: 'Mon', users: 200 },
   { name: 'Tue', users: 350 },
-  { name: 'Wed', users: 280 },
+  { name: 'Wed', users: 580 },
   { name: 'Thu', users: 500 },
   { name: 'Fri', users: 400 },
   { name: 'Sat', users: 650 },
-  { name: 'Sun', users: 800 },
+  { name: 'Sun', users: 200 },
 ];
 
 export default function Growth() {
   return (
-    <div className="bg-[#1a1a1f] border border-white/5 rounded-xl p-5 h-[360px] lg:h-[290px] md:h-[290px] mt-5 lg:mb-5 md:mb-5">
+    <div className="bg-[#1f1f40] border border-white/5 rounded-xl p-5 h-[360px] lg:h-[290px] md:h-[290px] mt-5 lg:mb-5 md:mb-5">
       <div className="flex justify-between items-start mb-4">
         <div>
           <h3 className="font-semibold text-[14px]">User Growth</h3>
