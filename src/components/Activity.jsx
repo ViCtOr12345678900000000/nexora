@@ -29,7 +29,7 @@ export default function Activity(){
                     </div>
                     <div className="min-w-0">
                       <p className="text-[12px] font-medium truncate">{a.heading}</p>
-                      <p className="text-[11px] text-white/40 truncate">{a.client} • {a.detail}</p>
+                      <p className="text-[11px] text-white/40 truncate">{a.client} • {a.info} {a.detail}</p>
                     </div>
                   </div>
 
