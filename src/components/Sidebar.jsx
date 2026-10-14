@@ -18,7 +18,7 @@ export default function Sidebar({ isOpen, setIsOpen }) {
 
       <aside className={`
         fixed lg:sticky top-0 left-0 z-40 h-screen
-        bg-blue-400/40 border-r border-white/5 flex flex-col shrink-0
+        bg-blue-400 border-r border-white/5 flex flex-col shrink-0
         transition-all duration-300 ease-in-out
         ${isOpen? 'w- translate-x-0' : 'w- -translate-x-full lg:w-0 lg:overflow-hidden lg:border-0'}
       `}>
