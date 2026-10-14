@@ -18,14 +18,14 @@ export default function Sidebar({ isOpen, setIsOpen }) {
 
       <aside className={`
         fixed lg:sticky top-0 left-0 z-40 h-screen
-        bg-blue-400 border-r border-white/5 flex flex-col shrink-0
+        bg-[#404055] border-r border-white/5 flex flex-col shrink-0
         transition-all duration-300 ease-in-out
         ${isOpen? 'w- translate-x-0' : 'w- -translate-x-full lg:w-0 lg:overflow-hidden lg:border-0'}
       `}>
         {/* THIS IS THE FIX - scrollable middle */}
         <div className="flex-1 overflow-y-auto overflow-x-hidden min-w- [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:bg-white/10 hover:[&::-webkit-scrollbar-thumb]:bg-white/20">
           {/* Logo */}
-          <div className="p-5 flex items-center justify-between sticky top-0 bg-blue-400  z-10">
+          <div className="p-5 flex items-center justify-between sticky top-0 bg-[#404055]  z-10">
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 rounded-full bg-gradient-to-br from-cyan-400 to-blue-600 grid place-items-center text-black font-bold">⬢</div>
               <div>
