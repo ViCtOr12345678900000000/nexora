@@ -7,7 +7,7 @@ const trafficData = [
 
 export default function Traffic() {
   return (
-    <div className="bg-[#404055] border border-white/5 rounded-xl p-5 h-[360px] mt-5">
+    <div className="bg-[#404055] border border-white/5 rounded-xl p-5 h-[360px] mt-5 md:my-[-0px] lg:my-[-1px]">
       <div className="flex justify-between items-center mb-6">
         <h3 className="font-semibold text-[14px]">Traffic Source</h3>
         <span className="text-[11px] text-white/30">Last 30 days</span>

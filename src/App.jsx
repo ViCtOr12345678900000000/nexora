@@ -23,7 +23,7 @@ export default function App(){
         </main>
        
 <div className="grid lg:grid-cols-2 md:flex gap-2 md:justify-center lg:justify-center" >
-        <div className="md:w-115 lg:w-240">
+        <div className=" md:w-115 lg:w-240">
         <Revenue/>
         <Activity />
         </div>
