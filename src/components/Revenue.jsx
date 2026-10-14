@@ -47,7 +47,7 @@ export default function Revenue() {
               contentStyle={{ backgroundColor: '#111115', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', fontSize: '12px' }}
               labelStyle={{ color: 'rgba(255,255,255,0.5)' }}
             />
-            <Area type="monotone" dataKey="revenue" stroke="#2dd4bf" strokeWidth={2} fillOpacity={1} fill="url(#colorRev)" dot={false} activeDot={{ r: 4, fill: '#2dd4bf' }} />
+            <Area type="monotone" dataKey="revenue" stroke="#2dd4bf" strokeWidth={2} tension={0.2} fillOpacity={1} fill="url(#colorRev)" dot={false} activeDot={{ r: 4, fill: '#2dd4bf' }} />
           </AreaChart>
         </ResponsiveContainer>
       </div>

@@ -1,8 +1,8 @@
 const trafficData = [
   { name: 'Direct', value: 45, color: 'bg-emerald-400' },
   { name: 'Organic Search', value: 30, color: 'bg-teal-400' },
-  { name: 'Social Media', value: 15, color: 'bg-blue-400' },
-  { name: 'Referrals', value: 10, color: 'bg-white/20' },
+  { name: 'Social Media', value: 60, color: 'bg-blue-400' },
+  { name: 'Referrals', value: 30, color: 'bg-white/20' },
 ];
 
 export default function Traffic() {
@@ -18,7 +18,7 @@ export default function Traffic() {
         <div className="relative w-32 h-32 rounded-full flex items-center justify-center"
              style={{ background: `conic-gradient(#2dd4bf 0% 45%, #2dd4bf80 45% 75%, #60a5fa 75% 90%, rgba(255,255,255,0.15) 90% 100%)` }}>
           <div className="w-20 h-20 bg-[#1a1a1f] rounded-full flex flex-col items-center justify-center">
-            <span className="text-[18px] font-bold">12.4k</span>
+            <span className="text-[18px] font-bold">125.4k</span>
             <span className="text-[10px] text-white/40">Visitors</span>
           </div>
         </div>
