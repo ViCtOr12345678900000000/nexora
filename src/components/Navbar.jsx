@@ -16,12 +16,12 @@ export default function Navbar({ isOpen, setIsOpen }){
       <div className="flex items-center gap-2 lg:gap-3">
         <div className="relative hidden md:block">
         <span className="absolute left-3 top-0.5 text-[20px] hover:cursor-pointer">⌕</span>
-        <input className="w-[300] h-8 border border-white/10 rounded-full placeholder:text-white/30 focus:outline-none bg-[#2e2e3f] p-4 text-[12px] pl-8 pr-3" type="text" placeholder="Search customers, order, snslytics" />
+        <input className="w-[300] h-8 border border-white/10 rounded-full placeholder:text-white/30 focus:outline-none bg-[#2e2e3f] p-4 text-[12px] pl-8 pr-3" type="text" placeholder="Search customers, order, analytics" />
         </div>
 
         
         <button className="w-8 h-8 rounded-full  bg-[#1a1a20] border border-white/10 grid place-items-center relative hover:cursor-pointer">🔔 
-        <span className="absolute top-1 right-1 w-3 h-3 bg-red-500 text-[8px]  font-bold rounded-full grid place-items-center">1
+        <span className="absolute top-1 right-1 w-3 h-3 bg-red-500 text-[8px]  font-bold rounded-full grid place-items-center">16
             </span>
         </button>
          

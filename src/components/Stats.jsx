@@ -9,7 +9,7 @@ export default function Stats(){
   return(
     <div className="grid grid-cols-2 md:flex lg:flex gap-2 lg:justify-center">
       {stats.map(s => (
-        <div key={s.label} className="bg-[#1a1a20] border border-white/5 rounded-sm p-5 lg:w-90 md:w-90">
+        <div key={s.label} className="bg-sky-300/60 border border-white/5 rounded-sm p-5 lg:w-90 md:w-90">
           <div className={`w-8 h-8 rounded-md ${s.color} grid place-items-center text-black font-bold text-sm mb-3`}>
             {s.icon}
           </div>
