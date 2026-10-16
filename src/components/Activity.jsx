@@ -13,32 +13,29 @@ function getStateColor(state) {
 
 export default function Activity(){
     return(
-        <div className="bg-emerald-300/50 border border-white/5 w-full rounded-xl p-5 mt-5">
-            <header className="flex justify-between items-center mb-5">
-              <h3 className="font-semibold text-[14px]">Recent Activity</h3>
-              <span className="text-[11px] text-white/40 cursor-pointer hover:text-white">View all</span>
+        <div className="bg-[#1a1a2e] border border-white/5 w-full rounded-xl xl:rounded-2xl p-5 xl:p-7 2xl:p-8 h-[360px] xl:h-[400px] 2xl:h-[460px] flex flex-col">
+            <header className="flex justify-between items-center mb-5 xl:mb-6">
+              <h3 className="font-semibold text-[14px] xl:text-[18px] 2xl:text-[20px]">Recent Activity</h3>
+              <span className="text-[11px] xl:text-[12px] text-white/40 cursor-pointer hover:text-white">View all</span>
             </header>
 
-            <div className="space-y-4">
+            <div className="space-y-4 xl:space-y-5 2xl:space-y-6 overflow-y-auto scrollbar-none">
               {data.map((a) => (
-                <div key={a.id} className="flex items-center justify-between gap-3">
-                  {/* Left - Avatar + info */}
+                <div key={a.id} className="flex items-center justify-between gap-3 xl:gap-4">
                   <div className="flex items-center gap-3 min-w-0">
-                    <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center text-[11px] font-medium flex-shrink-0">
+                    <div className="w-8 h-8 xl:w-10 xl:h-10 2xl:w-11 2xl:h-11 rounded-full bg-white/10 flex items-center justify-center text-[11px] xl:text-[12px] font-medium flex-shrink-0">
                       {a.photo}
                     </div>
                     <div className="min-w-0">
-                      <p className="text-[12px] font-medium truncate">{a.heading}</p>
-                      <p className="text-[11px] text-white/40 truncate">{a.client} • {a.info} {a.detail}</p>
+                      <p className="text-[12px] xl:text-[13px] 2xl:text-[14px] font-medium truncate">{a.heading}</p>
+                      <p className="text-[11px] xl:text-[12px] text-white/40 truncate">{a.client} • {a.info}</p>
                     </div>
                   </div>
-
-                  {/* Right - time + state */}
                   <div className="flex flex-col items-end gap-1 flex-shrink-0">
-                    <span className={`text-[10px] px-2 py-0.5 rounded-full border ${getStateColor(a.state)}`}>
+                    <span className={`text-[10px] xl:text-[11px] px-2.5 py-1 rounded-full border ${getStateColor(a.state)}`}>
                       {a.state}
                     </span>
-                    <span className="text-[10px] text-white/30">{a.timestamp}</span>
+                    <span className="text-[10px] xl:text-[11px] text-white/30">{a.timestamp}</span>
                   </div>
                 </div>
               ))}
